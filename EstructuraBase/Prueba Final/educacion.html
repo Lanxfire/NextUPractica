@@ -55,7 +55,28 @@ footer {
   color: white;
 }
 
+#EducationTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+#EducationTable td, #EducationTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#EducationTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#EducationTable tr:hover {background-color: #ddd;}
+
+#EducationTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
 </style>
 	</head>
 	<body>
@@ -159,7 +180,70 @@ footer {
 		</ul>
 		</nav>
 		<article>
-		Diseño Faltante de Educacion
+		<h2>Educacion</h2>
+		</br>
+
+		<table id="EducationTable">
+		  <tr>
+			<th>Año</th>
+			<th>Institucion</th>
+			<th>Lugar</th>
+			<th>Culmino</th>
+		  </tr>
+		  <tr>
+			<td>1995</td>
+			<td>Escuela Juan Santamaria</td>
+			<td>Curridabat</td>
+			<td>Culminado</td>
+		  </tr>
+		  <tr>
+			<td>2000</td>
+			<td>Liceo de Curridabat</td>
+			<td>Curridabat</td>
+			<td>Culminado</td>
+		  </tr>
+		  <tr>
+			<td>2004</td>
+			<td>Universidad Latina de Costa Rica</td>
+			<td>San Pedro</td>
+			<td>Culminado</td>
+		  </tr>
+		</table>
+		</br>
+		<h3>Agregar Formulario</h3>
+		<form autocomplete="on" name="FormularioEducacion">
+		<label for="año">Año:</label>
+		<select>
+			<option>2019</option>
+			<option>2018</option>
+			<option>2017</option>
+			<option>2016</option>
+			<option>2015</option>
+			<option>2014</option>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+			<option>2009</option>
+			<option>2008</option>
+			<option>2007</option>
+			<option>2006</option>
+			<option>2005</option>
+			<option>2004</option>
+			<option>2003</option>
+			<option>2002</option>
+			<option>2001</option>
+		</select>
+		<br/>
+		<label for="Institucion">Institucion:</label>
+		<input type="text" required>
+		<br/>
+		<label for="lugar">Lugar:</label>
+		<input type="text" size="50">
+		<br/>
+		<br/>
+		<input type="submit" value="Enviar">
+		</form>
 		</article>
 		<footer>
 	<p><b>Diseñador:</b> Roy Calderon R.</p>
